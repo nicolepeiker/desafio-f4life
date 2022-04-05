@@ -1,0 +1,56 @@
+:root {
+  --white: #ffffff;
+  --dark-blue: #132235;
+  --tiffany-blue: #6ddad3;
+
+  --roboto: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--roboto);
+  color: var(--dark-blue);
+  width: 100vw;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+h2:before {
+  content: '◼ ';
+  color: var(--tiffany-blue);
+  font-weight: bold;
+}
+
+section {
+  width: 80vw;
+  margin: 6rem auto;
+}
+
+.division {
+  height: 01;
+  width: 90vw;
+  border-top: 1px solid var(--tiffany-blue);
+  margin: 0 auto;
+}
+
+.btn {
+  background-color: var(--tiffany-blue);
+  border: none;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  width: 8rem;
+  height: 3rem;
+  box-sizing: border-box;
+  border-radius: 5px;
+  color: var(--white);
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1rem;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-decoration: none;
+  display: flex;
+}

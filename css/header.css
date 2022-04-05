@@ -1,0 +1,85 @@
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: var(--dark-blue);
+  height: 8vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 3;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  margin-left: 2rem;
+}
+
+.logo {
+  height: 8vh;
+}
+
+.nav-list:last-child {
+  /*ultimo filho da ul que é o li>a(contato)*/
+  margin-right: 1.5rem;
+}
+
+.nav-list li a {
+  color: var(--white);
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.nav-list li a:hover {
+  border-bottom: 1px solid var(--tiffany-blue);
+  font-weight: bold;
+  color: var(--tiffany-blue);
+}
+
+.mobile-menu {
+  height: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden; /*tudo que ultrapassa a visualização da tela fica escondido*/
+  }
+
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 40vw;
+    height: 40vh;
+    background: var(--dark-blue);
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+    transform: translateX(
+      100%
+    ); /*move o nav pra fora da tela, para esconder e aparecer só quando clica*/
+  }
+
+  .nav-list:last-child {
+    margin-right: 0;
+  }
+
+  .nav-list li {
+    margin-left: 0;
+    margin-top: 3rem;
+  }
+
+  .mobile-menu {
+    display: block; /*pro icon menu aparece*/
+  }
+
+  .nav-list.active {
+    transform: translateX(
+      0
+    ); /*faz o menu voltar para sua posição inictal (aparecendo)*/
+  }
+}

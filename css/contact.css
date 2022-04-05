@@ -1,0 +1,76 @@
+.contact-container {
+  display: flex;
+  align-items: top;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  margin-right: 5rem;
+}
+
+input:not(.btn) {
+  height: 2rem;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+  color: var(--dark-blue);
+}
+
+textarea {
+  font-family: var(--roboto);
+  font-size: 0.9rem;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  color: var(--dark-blue);
+}
+
+.whatsapp {
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+}
+
+.whatsapp h3 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: var(--tiffany-blue);
+}
+
+.whatsapp a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.whatsapp .btn {
+  width: 10rem;
+}
+
+.whatsapp p {
+  margin: 2rem 0;
+  line-height: 1.5rem;
+}
+
+.whatsapp img {
+  width: 1.5rem;
+  margin-right: 0.5rem;
+}
+
+.error {
+  color: #ff0000;
+  font-size: 0.75rem;
+}
+
+.success {
+  color: var(--dark-blue);
+  margin-top: 2rem;
+  transition: 0.5s;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-container {
+    flex-direction: column-reverse;
+    max-width: 450px;
+  }
+}

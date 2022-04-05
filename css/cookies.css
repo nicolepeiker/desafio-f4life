@@ -1,0 +1,33 @@
+.cookies {
+  width: 100vw;
+  height: 10vh;
+  background: #13223599;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+}
+
+.cookies p {
+  width: 60vw;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  padding-right: 1rem;
+}
+
+.cookies.hide {
+  display: none;
+}
+
+.btn-cookies {
+  width: 80px;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .cookies {
+    height: 20vh;
+  }
+}

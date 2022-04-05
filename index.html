@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>F4LIFE - Moradias universitárias</title>
+
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/rooms.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/contact.css" />
+    <link rel="stylesheet" href="./css/cookies.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html"
+          ><img class="logo" src="./images/logo-header.png" alt="Logo F4LIFE"
+        /></a>
+        <img
+          class="mobile-menu"
+          src="./images/menu.svg"
+          alt="Ícone de um menu"
+        />
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#moradias">Moradias</a></li>
+          <li><a class="nav-link" href="#sobre">Sobre</a></li>
+          <li><a class="nav-link" href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <img src="./images/roommates.jpg" alt="Sete amigos sentados no chão" />
+      <a href="#moradias"
+        ><img
+          class="arrow"
+          src="./images/circle-down.svg"
+          alt="Ícone de seta indicando para baixo"
+      /></a>
+    </main>
+    <section id="moradias" class="rooms">
+      <h2>moradias</h2>
+      <div class="cards">
+        <div class="card">
+          <img
+            src="./images/shared-apart.jpg"
+            alt="Três rapazes na cozinha preparando comida"
+          />
+          <h4>Apartamento compartilhado com quarto individual</h4>
+        </div>
+        <div class="card">
+          <img
+            src="./images/shared-room.jpg"
+            alt="Três amigas deitadas na cama"
+          />
+          <h4>Quarto compartilhado</h4>
+        </div>
+        <div class="card">
+          <img
+            src="./images/individual-apart.jpg"
+            alt="Garota sentada no chão lendo"
+          />
+          <h4>Kitnets - Espaço individual completo</h4>
+        </div>
+        <div class="card">
+          <img
+            src="./images/wheelchair.jpg"
+            alt="Garoto cadeirante conversando com sua amiga"
+          />
+          <h4>
+            Apartamentos adaptados para pessoas com restrição de locomoção
+          </h4>
+        </div>
+      </div>
+    </section>
+    <div class="division"></div>
+    <section id="sobre" class="about">
+      <div class="infos">
+        <h2>quem somos</h2>
+        <p>
+          F4Life é uma empresa de aluguéis de repúblicas para pessoas
+          universitárias.
+        </p>
+        <p>
+          Similar aos modelos de Quinto Andar e Loft, a empresa realiza reformas
+          e prepara moradias para recepção de pessoas universitárias em um
+          ambiente específico e otimizado para a vida de graduação.
+        </p>
+      </div>
+      <img
+        src="./images/about.svg"
+        alt="Ilustração representando o atendente entregando uma chave à cliente"
+      />
+    </section>
+    <div class="division"></div>
+    <section id="contato" class="contact">
+      <h2>contato</h2>
+      <div class="contact-container">
+        <form>
+          <input
+            type="text"
+            id="nome"
+            required
+            placeholder="Digite aqui seu nome"
+          />
+          <input type="email" id="email" placeholder="Digite aqui seu email" />
+          <span id="error-email"></span>
+          <textarea
+            id="mensagem"
+            cols="30"
+            rows="10"
+            placeholder="Deixe aqui sua mensagem..."
+          ></textarea>
+          <span id="error-textarea"></span>
+          <input type="submit" value="Enviar" class="btn" />
+          <span id="submit-success"></span>
+        </form>
+        <div class="whatsapp">
+          <h3>Como podemos ajudar?</h3>
+          <p>
+            Entre em contato com a gente, pelo whatsapp ou formulário, queremos
+            tirar suas dúvidas, ouvir suas críticas e sugestões.
+          </p>
+          <a
+            href="https://api.whatsapp.com/send?phone=+5541999997777&text=Olá!"
+            class="btn"
+            target="_blank"
+            ><img
+              src="./images/whatsapp.svg"
+              alt="Ícone do Whatsapp"
+            />Whatsapp</a
+          >
+        </div>
+      </div>
+    </section>
+    <div class="cookies">
+      <p>
+        Nós utilizamos cookies e tecnologias semelhantes para melhorar a sua
+        experiência, tornando a navegação mais ágil e customizada e, para
+        personalização do site conforme suas preferências, segundo os seus
+        hábitos e o seu perfil. Para mais informações, você pode visitar a nossa
+        Politica de Privacidade
+      </p>
+      <button class="btn btn-cookies">Ciente</button>
+    </div>
+    <footer>
+      <div class="footer-container">
+        <p class="copyright">&copy; 2022 F4LIFE.</p>
+        <ul>
+          <li>
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                class="social"
+                src="./images/twitter.svg"
+                alt="Logo Twitter"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/" target="_blank"
+              ><img
+                class="social"
+                src="./images/facebook.svg"
+                alt="Logo Facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                class="social"
+                src="./images/instagram.svg"
+                alt="Logo Instagram"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="./scripts/mobile-nav.js"></script>
+    <script src="./scripts/cookies.js"></script>
+    <script src="./scripts/validation-form.js"></script>
+  </body>
+</html>

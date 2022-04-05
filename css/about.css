@@ -1,0 +1,34 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.infos {
+  width: 50%;
+}
+
+.infos p {
+  margin-bottom: 1rem;
+  line-height: 1.25rem;
+}
+
+.about img {
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .infos {
+    width: 80vw;
+  }
+
+  .about img {
+    margin-top: 3rem;
+    width: 80vw;
+  }
+}

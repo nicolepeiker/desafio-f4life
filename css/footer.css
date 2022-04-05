@@ -1,0 +1,35 @@
+footer {
+  background: var(--dark-blue);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+  height: 8vh;
+  color: var(--tiffany-blue);
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  margin-left: 3rem;
+}
+
+footer li:hover {
+  transform: scale(1.1);
+}
+
+.social {
+  width: 1.5rem;
+}
+
+@media screen and (max-width: 500px) {
+  footer li {
+    margin-left: 1rem;
+  }
+}
